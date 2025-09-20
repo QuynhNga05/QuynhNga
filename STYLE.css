@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Căn giữa logo */
+.logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 100px; /* Kích thước logo phù hợp */
+    height: auto;
+}
+
+/* Thanh menu kéo dài full màn hình */
+.menu {
+    background-color: black;  /* Nền đen */
+    width: 100vw;  /* Chiều rộng full màn hình */
+    display: flex;
+    justify-content: center;  /* Căn giữa các mục */
+    padding: 15px 0;  /* Khoảng cách trên dưới */
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;  /* Bỏ gạch chân */
+    margin: 0 20px;  /* Khoảng cách giữa các mục */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    color: #f1c40f;  /* Màu vàng khi hover */
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    color: #333;
+}
+
+
+.danh-sach-san-pham {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.san-pham {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.san-pham img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.san-pham:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.san-pham:hover img {
+    transform: scale(1.05);
+}
+
+.san-pham h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gia {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 10px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+iframe {
+    width: 80%;
+    height: 500px;
+}
